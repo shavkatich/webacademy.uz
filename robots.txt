@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /sites
+Disallow: /talium
+Disallow: /html
+Crawl-delay: 1
+Host: webacademy.uz
+Sitemap: http://webacademy.uz/sitemap.xml
+

@@ -1,0 +1,665 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Open Sans Condensed';
+    font-size: 18px;
+    color: @font-color-white;
+}
+
+img {
+    width: 100%;
+}
+
+h1 {
+    font-size: @h1-font-size;
+    padding-bottom: 20px;
+}
+
+h2 {
+    font-size: @h2-font-size;
+}
+
+h3 {
+    font-size: @h3-font-size;
+    color: @color-white;
+}
+
+a {
+    text-transform: uppercase;
+    &:focus {
+        color: @color-bg-button-green;
+        text-decoration: none;
+    }
+    &:hover {
+        color: @color-bg-button-green;
+        text-decoration: none;
+    }
+}
+
+.vocation {
+    & p {
+        line-height: 24px;
+    }
+    & img {
+        padding-top: 28px;
+    }
+    & img {
+        padding-top: 28px;
+    }
+    & span {
+        line-height: 30px;
+    }
+}
+
+footer {
+    & p {
+        margin: 0;
+    }
+    & a {
+        text-transform: none;
+        color: @color-white;
+    }
+    & img {
+        width: 50%;
+    }
+    & iframe {
+        width: 100%;
+    }
+    & .form-control {
+        float: left;
+        margin-top: 10px;
+    }
+    & .form-control:first-child {
+        width: 60%;
+        margin-right: 5px;
+    }
+    & .form-control:last-child {
+        width: 35%;
+    }
+}
+
+.bg-dark {
+    background: @color-bg-dark;
+}
+
+.bg-green {
+    background: @color-bg-green url(../images/patern.png);
+}
+
+section,
+footer {
+    padding: 30px 0;
+}
+
+.slogan,
+.title {
+    font-size: 22px;
+}
+
+.show {
+    display: block;
+}
+
+section .form-control:not(textarea) {
+    font-size: 18px;
+    height: 50px;
+}
+
+td:last-child {
+    padding-left: 20px;
+}
+
+.button {
+    margin-top: 15px;
+    padding: 10px 30px;
+    border: 1px solid;
+    display: inline-block;
+    border-radius: 3px;
+    color: @color-white;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.button:hover {
+    background-color: @color-white;
+    color: @color-bg-button-green;
+    text-decoration: none;
+}
+
+.btn-green {
+    background-color: @color-bg-button-green;
+    color: @color-white;
+    &:hover {
+        background-color: @color-bg-dark;
+        color: @color-white;
+    }
+}
+
+.clerfix {
+    clear: both;
+}
+
+
+/*------------------------------site-head------------------------------*/
+
+.navbar {
+    border-radius: 0;
+    height: 100px;
+    margin-bottom: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    border-bottom: 2px solid @color-white;
+}
+
+.navbar-brand {
+    padding: 10px 15px;
+    padding-left: 0;
+}
+
+.navbar-nav>li>a {
+    line-height: 70px;
+    text-transform: uppercase;
+    color: @color-white;
+}
+
+.navbar-inverse .navbar-nav>.active>a,
+.navbar-inverse .navbar-nav>.active>a:focus,
+.navbar-inverse .navbar-nav>.active>a:hover {
+    background-color: @color-bg-button-green;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    font-size: 20px;
+    color: @color-white;
+}
+
+.navbar-inverse .navbar-nav>li:hover {
+    border-bottom: 3px solid @color-bg-button-green;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover {
+    color: @color-white;
+}
+
+.dropdown-menu>li>a:focus,
+.dropdown-menu>li>a:hover {
+    color: @color-white;
+    text-decoration: none;
+    background-color: @color-bg-button-green;
+}
+
+.site-title {
+    display: none;
+}
+
+
+/*------------------------------site-slider------------------------------*/
+
+.site-slider .item {
+    height: 500px;
+}
+
+.carousel.fade {
+    opacity: 1;
+}
+
+.carousel.fade .item {
+    opacity: 0;
+    transition: opacity 1s;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.carousel.fade .item.active {
+    opacity: 1;
+    position: relative;
+}
+
+.slider-slide {
+    background-size: cover;
+    background-position: center center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.slider-slide1 {
+    background-image: url(../images/slider-bg-main.jpg);
+}
+
+.slider-slide2 {
+    background-image: url(../images/slider-bg-basic.jpg);
+}
+
+.slider-slide3 {
+    background-image: url(../images/slider-bg-advanced.jpg);
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 5%;
+}
+
+.slider-main-title {
+    font-size: 80px;
+    font-weight: bold;
+    text-shadow: 0 0 20px @color-black;
+}
+
+.slider-main-title-1 {
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 250px;
+}
+
+.slider-title {
+    font-size: 70px;
+    line-height: 20px;
+    text-shadow: 0 0 20px @color-black;
+}
+
+.carousel-control .glyphicon-chevron-left,
+.carousel-control .icon-prev {
+    left: 60%;
+}
+
+.carousel-control .glyphicon-chevron-right,
+.carousel-control .icon-next {
+    right: 60%;
+}
+
+
+/*------------------------------proffesion------------------------------*/
+
+.ways {
+    & ul {
+        list-style: none;
+        padding-left: 45px;
+        & li{
+            font-size: 17px;
+            }
+        & li::before {
+            content: "";
+            display: inline-block;
+            width: 15px;
+            height: 15px;
+            padding-left: 30px;
+            padding-top: 7px;
+            background-image: url(../images/check.png);
+            background-repeat: no-repeat;
+        }
+    }
+    & .button {
+        width: 270px;
+    }
+    h3 {
+        margin-top: 0;
+    }
+}
+
+.ways-title__text {
+    padding-left: 0;
+}
+
+.ways-img img {
+    width: 270px;
+    height: 270px;
+    margin: 20px 0;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.after img {
+    margin: 20px 0;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.ways-img img:hover,
+.after img:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.ways__item {
+    width: 323px;
+    height: 300px;
+    position: relative;
+    & .button {
+        position: absolute;
+        bottom: 10px;
+        left:45px;
+    }
+}
+
+.about p {
+    font-size: 20px;
+}
+
+.courses {
+    background-image: url(../images/courses.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.courses-row {
+    margin-bottom: 20px;
+}
+
+.courses-row__text {
+    padding-top: 80px;
+}
+
+.circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin: auto;
+    box-shadow: 0 0 30px @color-bg-dark;
+}
+
+.circle:hover .sprite {
+    transform: scale(1);
+}
+
+.sprite {
+    display: inline-block;
+    background-image: url(../images/spritesheet.png);
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    margin-top: 30px;
+    transform: scale(0.8);
+    transition: 0.5s;
+}
+
+.sprite-courses-brand-logo-bem {
+    background-position: -5px -5px;
+}
+
+.sprite-courses-brand-logo-bootstrap {
+    background-position: -165px -5px;
+}
+
+.sprite-courses-brand-logo-css {
+    background-position: -325px -5px;
+}
+
+.sprite-courses-brand-logo-git {
+    background-position: -5px -165px;
+}
+
+.sprite-courses-brand-logo-grunt {
+    background-position: -165px -165px;
+}
+
+.sprite-courses-brand-logo-gulp {
+    background-position: -325px -165px;
+}
+
+.sprite-courses-brand-logo-html {
+    background-position: -5px -325px;
+}
+
+.sprite-courses-brand-logo-jquery {
+    background-position: -165px -325px;
+}
+
+.sprite-courses-brand-logo-js {
+    background-position: -325px -325px;
+}
+
+.sprite-courses-brand-logo-less {
+    background-position: -485px -5px;
+}
+
+.sprite-courses-brand-logo-sass {
+    background-position: -485px -165px;
+}
+
+.courses h2 {
+    color: @color-white;
+}
+
+
+/*------------------------------contacts------------------------------*/
+
+.contacts {
+    color: @color-white;
+    & p > a {
+        color: @color-white;
+    }
+    & p > a:hover {
+        color: @color-bg-button-green;
+    }
+    & p i {
+        color: @color-bg-button-green;
+        padding-right: 10px;
+        font-size: 22px;
+    }
+    & a:hover {
+        color: @color-white;
+        text-decoration: none;
+    }
+}
+
+.map iframe {
+    width: 100%;
+    height: 331px;
+    border-radius: 5px;
+}
+
+address {
+    margin-bottom: 10px;
+}
+
+input[type=submit] {
+    background-color: @color-bg-dark;
+    color: @color-white;
+    border: 1px solid @color-white;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+input[type=submit]:hover {
+    background-color: @color-bg-button-green;
+}
+
+.social .fa {
+    font-size: 30px;
+    width: 50px;
+    color: @color-white;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    &:hover {
+        color: @color-bg-dark;
+    }
+}
+
+.social h3 {
+    margin-top: 0;
+}
+
+
+/*-------------------------------- why_us--------------------------------*/
+
+.why_us {
+    & li {
+        font-size: 18px;
+    }
+    & img {
+        margin: 20px 0 0;
+    }
+}
+
+
+/*------------------------------back-to-top------------------------------*/
+
+#back-to-top {
+    height: 40px;
+    width: 40px;
+    background-image: url(../images/patern.png);
+    background-color: @color-bg-green;
+    color: @color-white;
+    text-align: center;
+    position: fixed;
+    bottom: 7%;
+    right: 2%;
+    line-height: 40px;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    display: none;
+}
+
+.tabpanel img {
+    width: 50%;
+}
+
+
+/*-----------------------------addition pages--------------------*/
+
+.text-white {
+    color: @color-white;
+}
+
+.skills {
+    & ul {
+        margin-top: 30px;
+        padding-left: 0;
+    }
+    & li {
+        list-style: none;
+        font-size: 18px;
+        line-height: 39px;
+    }
+    & li i {
+        padding-right: 10px;
+        color: @color-bg-button-green;
+    }
+}
+
+.templates img {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    border-radius: 5px;
+    &:hover {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+}
+
+.mt20 {
+    margin-top: 20px;
+}
+
+.mt30 {
+    margin-top: 30px;
+}
+
+.study .nav-pills {
+    padding-bottom: 10px;
+}
+
+.study .nav-pills>li>a,
+.study .nav-pills>li>a:focus,
+.study .nav-pills>li>a:hover {
+    background-color: @color-bg-dark;
+    border: 1px solid @color-white;
+    border-radius: 3px;
+    color: @color-white;
+}
+
+.study .nav-pills>li.active>a,
+.study .nav-pills>li.active>a:focus,
+.study .nav-pills>li.active>a:hover {
+    background-color: @color-bg-button-green;
+    color: @color-white;
+}
+
+.star {
+    display: inline-block;
+    height: 18.33px;
+    width: 100px;
+    background-image: url(../images/stars.png);
+}
+
+.star5 {
+    background-position: 0 18.33px;
+}
+
+.star4 {
+    background-position: 0 36.66px;
+}
+
+.star3 {
+    background-position: 0 54.99px;
+}
+
+.star2 {
+    background-position: 0 73.32px;
+}
+
+.star1 {
+    background-position: 0 91.5px;
+}
+
+.ya_counter {
+    margin-top: 15px;
+}
+
+.panel-heading {
+    padding: 20px 15px;
+}
+
+.panel-body p {
+    color: @font-color-dark;
+    &:first-child {
+        font-weight: bold;
+    }
+}
+
+.panel-title {
+    & a {
+        font-size: 22px;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    & img {
+        width: 100px;
+    }
+}
+
+.collapse_img {
+    display: inline-block;
+}
+
+.panel-default>.panel-heading {
+    color: @color-white;
+    background-image: url(../images/patern.png);
+    background-color: @color-bg-green;
+}
+
+.modal {
+    width: 200px;
+    height: 50px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin-left: -100px;
+    margin-top: -25px;
+}
